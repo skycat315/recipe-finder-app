@@ -29,8 +29,8 @@ export default {
   methods: {
     // Method to fetch recipes from the API based on the search query
     async fetchRecipes(query) {
-      const appId = process.env.VUE_APP_EDAMAM_APP_ID;
-      const appKey = process.env.VUE_APP_EDAMAM_APP_KEY;
+      const appId = 'dd48d7fe';
+      const appKey = 'c084e1d8e2a291660ed3939970d911d9';
       // Fetch recipes from the Edamam API
       const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${appKey}`);
       const data = await response.json();
